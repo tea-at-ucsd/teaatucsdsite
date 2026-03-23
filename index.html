@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/favcon.png" onerror="this.href='https://placehold.co/32x32/0c4a6e/fff?text=TEA'">
+    <link rel="icon" type="image/png" href="assets/favicon.png" onerror="this.href='https://placehold.co/32x32/0c4a6e/fff?text=TEA'">
     
     <!-- Custom Tailwind Config -->
     <script>
@@ -38,7 +38,7 @@
 </head>
 <body class="bg-gray-50 font-sans antialiased">
     <!-- Navigation -->
-    <nav class="bg-primary-900 text-white shadow-lg fixed w-full z-50 transition-all duration-300">
+    <nav class="nav-backdrop text-white shadow-lg fixed w-full z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
@@ -61,7 +61,7 @@
     </nav>
     
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-primary-900 bg-opacity-95 text-white flex flex-col items-center justify-center space-y-8 md:hidden">
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 mobile-menu-enhanced text-white flex flex-col items-center justify-center space-y-8 md:hidden">
         <button id="close-menu-button" class="absolute top-6 right-6 text-3xl focus:outline-none p-2 rounded-full hover:bg-primary-800 transition-all">
             <i class="fas fa-times"></i>
         </button>
@@ -92,7 +92,7 @@
                      onerror="this.src='https://placehold.co/400x300/0c4a6e/fff?text=Event+1'" 
                      alt="Event 1" 
                      class="rounded-lg shadow-xl w-full h-64 object-cover transition-transform duration-500 hover:scale-105">
-                <img src="project2/GESTConceptArt.jpg" 
+                <img src="assets/project_meeting.jpg" 
                      onerror="this.src='https://placehold.co/400x300/0c4a6e/fff?text=Project+Work'" 
                      alt="Project Work" 
                      class="rounded-lg shadow-xl w-full h-64 object-cover transition-transform duration-500 hover:scale-105">
@@ -134,7 +134,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl group">
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl group card-enhanced">
                     <div class="relative overflow-hidden h-64">
                         <img src="project1/Taro.png" 
                              onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Project+Taro'" 
@@ -151,10 +151,10 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl group">
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl group card-enhanced">
                     <div class="relative overflow-hidden h-64">
-                        <img src="project3/HauntedMaze.png" 
+                        <img src="project2/HauntedMaze.png" 
                              onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Haunted+Maze'" 
                              alt="UCSD Haunted Maze" 
                              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -214,16 +214,16 @@
             </div>
             
             <div class="max-w-5xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- LinkedIn -->
                     <div class="bg-primary-800 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2 border-primary-700 hover:border-accent-400/30">
-                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg">
+                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg social-icon-enhanced">
                             <i class="fab fa-linkedin-in text-3xl text-accent-400"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-4">LinkedIn</h3>
                         <p class="mb-6 text-gray-300">Connect with us professionally and see where our members are working.</p>
                         <a href="https://www.linkedin.com/company/themed-entertainment-association-ucsd/" 
-                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg"
+                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg btn-enhanced focus-enhanced"
                            target="_blank">
                             Follow Us
                         </a>
@@ -231,13 +231,13 @@
                     
                     <!-- Instagram -->
                     <div class="bg-primary-800 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2 border-primary-700 hover:border-accent-400/30">
-                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg">
+                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg social-icon-enhanced">
                             <i class="fab fa-instagram text-3xl text-accent-400"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Instagram</h3>
                         <p class="mb-6 text-gray-300">See our latest events, projects, and meetings in action.</p>
                         <a href="https://www.instagram.com/teaatucsd" 
-                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg"
+                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg btn-enhanced focus-enhanced"
                            target="_blank">
                             Follow Us
                         </a>
@@ -245,15 +245,29 @@
                     
                     <!-- Discord -->
                     <div class="bg-primary-800 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2 border-primary-700 hover:border-accent-400/30">
-                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg">
+                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg social-icon-enhanced">
                             <i class="fab fa-discord text-3xl text-accent-400"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Discord</h3>
                         <p class="mb-6 text-gray-300">Join our community to stay up to date on events and collaborate on projects.</p>
                         <a href="https://discord.gg/uTvAH4FbKv" 
-                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg"
+                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg btn-enhanced focus-enhanced"
                            target="_blank">
                             Join Server
+                        </a>
+                    </div>
+                    
+                    <!-- YouTube -->
+                    <div class="bg-primary-800 rounded-xl p-8 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border-2 border-primary-700 hover:border-accent-400/30">
+                        <div class="bg-primary-700 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center transition-transform hover:scale-110 hover:shadow-lg social-icon-enhanced">
+                            <i class="fab fa-youtube text-3xl text-accent-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">YouTube</h3>
+                        <p class="mb-6 text-gray-300">Watch our project showcases, event highlights, and behind-the-scenes content.</p>
+                        <a href="https://www.youtube.com/@themedentertainmentatucsd" 
+                           class="inline-block bg-accent-400 hover:bg-accent-500 text-primary-900 font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg btn-enhanced focus-enhanced"
+                           target="_blank">
+                            Subscribe
                         </a>
                     </div>
                 </div>

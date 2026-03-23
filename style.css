@@ -1,60 +1,154 @@
-/* Custom CSS */
+/* TEA @ UCSD Custom Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-body {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+:root {
+  --primary-900: #0c4a6e;
+  --primary-800: #075985;
+  --primary-700: #0369a1;
+  --accent-400: #facc15;
+  --accent-500: #eab308;
 }
 
-/* Custom animations */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Custom hover effects */
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Navigation */
+.nav-backdrop {
+  backdrop-filter: blur(10px);
+  background: rgba(12, 74, 110, 0.95);
+}
+
+.mobile-menu-enhanced {
+  background: linear-gradient(135deg, rgba(12, 74, 110, 0.98), rgba(7, 89, 133, 0.98));
+  backdrop-filter: blur(20px);
+}
+
+/* Cards */
+.card-enhanced {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-enhanced:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-8px) scale(1.02);
+}
+
 .card-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Gradient text */
+/* Buttons */
+.btn-enhanced {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-enhanced:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Social Icons */
+.social-icon-enhanced {
+  transition: all 0.3s ease;
+}
+
+.social-icon-enhanced:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Text Effects */
 .text-gradient {
-    background: linear-gradient(45deg, #0c4a6e, #0369a1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(45deg, var(--primary-900), var(--primary-700));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-/* Custom scrollbar */
+.text-responsive {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+/* Loading States */
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+/* Accessibility */
+.focus-enhanced:focus {
+  outline: 2px solid var(--accent-400);
+  outline-offset: 2px;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0c4a6e;
-    border-radius: 4px;
+  background: var(--primary-900);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #075985;
+  background: var(--primary-800);
+}
+
+/* Image Lazy Loading */
+img[loading="lazy"] {
+  transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"]:not([loaded]) {
+  opacity: 0.7;
 }

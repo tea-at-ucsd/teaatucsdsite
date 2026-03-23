@@ -1,42 +1,146 @@
 # 🎢 Themed Entertainment at UC San Diego Website 🎢
-Link to site: [https://tea-at-ucsd.github.io/teaatucsdsite/](https://tea-at-ucsd.github.io/teaatucsdsite/)
 
-# Documentation
+**Live Site:** [https://tea-at-ucsd.github.io/teaatucsdsite/](https://tea-at-ucsd.github.io/teaatucsdsite/)
 
-## Site Layout
-```text
-├── Assets/               # Content and data
-│   ├── boardphots/       # Board/alumni pictures
-│   ├── favcon.png        # Tab icon
-│   ├── GroupAll.png      # TEA Group picture
-│   ├── TEALogo.png       # TEA Logo
-│   ├── alumni.json       # Edit to change alumni list on site
-│   └── alumni.json       # Edit to change board member list on site
-├── project1/             # Project 1 Page/Data
-├── project2/             # Project 2 Page/Data
-├── project3/             # Project 2 Data (this one does not have a page just links to the Haunted Maze IG)
-├── index.html            # Homepage of site
-├── script.js             # Script that does action such as dynamically load board members from JSON file
-├── style.css             # CSS Styling of site
-└── README.MD             # What your reading right now!
+## Overview
+
+This is the official website for the Themed Entertainment Association (TEA) at UC San Diego. The site showcases our club's projects, board members, alumni, and provides information about how to get involved.
+
+## Technology Stack
+
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Styling:** Tailwind CSS + Custom CSS
+- **Animations:** Animate.css
+- **Icons:** Font Awesome
+- **Deployment:** GitHub Pages (automatic from `main` branch)
+
+## Project Structure
+
+```
+teaatucsdsite/
+├── assets/                    # Static assets and data
+│   ├── board_photos/          # Board member photos
+│   │   ├── Becca.jpg
+│   │   ├── Ben.jpg
+│   │   ├── Cristin.jpg
+│   │   ├── Elisa.jpg
+│   │   ├── Kaitlin_B.jpg
+│   │   ├── Naomika.jpg
+│   │   ├── Ryan.jpg
+│   │   └── Sophia.jpg
+│   ├── favicon.png            # Site favicon
+│   ├── GroupAll.jpg           # Group photo
+│   ├── TEA_logo.png           # Club logo
+│   ├── project_meeting.jpg    # Project work photo
+│   ├── boardmembers.json      # Board member data
+│   └── alumni.json            # Alumni data
+├── project1/                  # Project 1: Audio Animatronic
+│   ├── Taro.png               # Project thumbnail
+│   └── index.html             # Project page
+├── project2/                  # Project 2: Haunted Maze (this one does not have a page just links to the Haunted Maze IG)
+│   └── HauntedMaze.png        # Project thumbnail    
+├── index.html                 # Main homepage
+├── script.js                  # JavaScript functionality
+├── style.css                  # Custom CSS styles
+└── README.md                  # This file
 ```
 
+## Key Features
 
-## Editing the site
-1. Clone the repo using `git clone` or github desktop
+- **Responsive Design:** Mobile-first approach with Tailwind CSS
+- **Dynamic Content:** Board members and alumni loaded from JSON files
+- **Smooth Animations:** Scroll-triggered animations and hover effects
+- **Navigation:** Sticky navbar with smooth scrolling
+- **Social Integration:** Links to LinkedIn, Instagram, Discord, and YouTube
+- **Project Showcase:** Featured projects with dedicated pages/links
 
-2. `git checkout -b "Name"`  creates a branch switches you to that branch 
+## Configuration
 
-3. Make changes to site using editor (e.i. VS Code)
+### Updating Board Members
 
-4. `git add -A`  adds and updates all files in repo 
+Edit `assets/boardmembers.json` to update board member information:
 
-5. `git commit -m "comment"`  adds everything to a commit 
+```json
+[
+    {
+        "name": "Full Name",
+        "title": "Position",
+        "major": "Major/Department",
+        "image": "assets/board_photos/photo.jpg",
+        "linkedin": "https://linkedin.com/in/username"
+    }
+]
+```
 
-6. `git push` pushes commit to remote repo
+### Updating Alumni
 
-7. Open pull request
+Edit `assets/alumni.json` to update alumni information:
 
-## Deploying
-This site is configured to automatically deploy from the `master` branch. After pushing/merging a change to master it will take 1-5 minutes to deploy to the public facing site. 
+```json
+[
+    {
+        "name": "Full Name",
+        "title": "Former Position",
+        "major": "Major/Department",
+        "image": "assets/board_photos/photo.jpg",
+        "linkedin": "https://linkedin.com/in/username",
+        "company": "Company Name"
+    }
+]
+```
+
+## Development Workflow
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/tea-at-ucsd/teaatucsdsite.git
+   cd teaatucsdsite
+   ```
+
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Make changes** using your preferred editor (VS Code recommended)
+
+4. **Stage and commit changes**
+   ```bash
+   git add .
+   git commit -m "Descriptive commit message"
+   ```
+
+5. **Push to remote**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+6. **Create a Pull Request** on GitHub
+
+7. **Merge to main** after review to trigger automatic deployment
+
+## Deployment
+
+This site uses GitHub Pages for automatic deployment:
+
+- **Source:** `main` branch
+- **Trigger:** Automatic on push/merge to `main`
+- **Deployment Time:** 1-5 minutes
+- **URL:** https://tea-at-ucsd.github.io/teaatucsdsite/
+
+## Local Development
+
+Use the live server extension in VS Code to run the site locally.
+
+## Troubleshooting
+
+### Images Not Loading
+- Check file paths in HTML and JSON files
+- Verify image files exist in the correct directories
+- Ensure image names match exactly (case-sensitive)
+
+### JSON Data Not Loading
+- Validate JSON syntax using an online validator
+- Check for trailing commas
+- Ensure proper file encoding (UTF-8)
 
