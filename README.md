@@ -1,6 +1,7 @@
 # 🎢 Themed Entertainment at UC San Diego Website 🎢
 
 **Live Site:** [https://tea-at-ucsd.github.io/teaatucsdsite/](https://tea-at-ucsd.github.io/teaatucsdsite/)
+**Bit.ly Link:** [https://bit.ly/tea_at_ucsd](https://bit.ly/tea_at_ucsd)
 
 ## Overview
 
@@ -20,14 +21,9 @@ This is the official website for the Themed Entertainment Association (TEA) at U
 teaatucsdsite/
 ├── assets/                    # Static assets and data
 │   ├── board_photos/          # Board member photos
-│   │   ├── Becca.jpg
-│   │   ├── Ben.jpg
-│   │   ├── Cristin.jpg
-│   │   ├── Elisa.jpg
-│   │   ├── Kaitlin_B.jpg
-│   │   ├── Naomika.jpg
-│   │   ├── Ryan.jpg
-│   │   └── Sophia.jpg
+│   │   ├── board member pics
+│   ├── alumni_photos/         # Alumni photos
+│   │   ├── alumni pics
 │   ├── favicon.png            # Site favicon
 │   ├── GroupAll.jpg           # Group photo
 │   ├── TEA_logo.png           # Club logo
@@ -82,7 +78,7 @@ Edit `assets/alumni.json` to update alumni information:
         "name": "Full Name",
         "title": "Former Position",
         "major": "Major/Department",
-        "image": "assets/board_photos/photo.jpg",
+        "image": "assets/alumni_photos/photo.jpg",
         "linkedin": "https://linkedin.com/in/username",
         "company": "Company Name"
     }
