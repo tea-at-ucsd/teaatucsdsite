@@ -47,5 +47,12 @@
         "major": "Mechanical Engineering",
         "image": "assets/board_photos/Eli.jpg",
         "linkedin": null 
+    },
+    {
+        "name": "Avalon Shelton",
+        "title": "Technical Director",
+        "major": "Electrical Engineering",
+        "image": "assets/board_photos/Avalon.jpg",
+        "linkedin": null 
     }
 ]
