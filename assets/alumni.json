@@ -1,9 +1,42 @@
 [
+   {
+        "name": "Kaitlin Bartone",
+        "title": "Former Marketing and Outreach Director",
+        "major": "Psychology",
+        "image": "assets/board_photos/Kaitlin_B.jpg",
+        "linkedin": "https://www.linkedin.com/in/kaitlin-bartone-91335635b/"
+    },
+
+    {
+        "name": "Sophia Ramirez",
+        "title": "Former Events Coordinator",
+        "major": "Cognitive Science Design & ICAM",
+        "image": "assets/board_photos/Sophia.jpg",
+        "linkedin": "https://www.linkedin.com/in/sophia-ramirez-/"
+    },
+
+    {
+        "name": "Becca Behl",
+        "title": "Former Competition Coordinator",
+        "major": "Economics",
+        "image": "assets/board_photos/Becca.jpg",
+        "linkedin": "https://www.linkedin.com/in/rebecca-behl-85413b34b/"
+    },
+   
     {
         "name": "Cristin Huffman",
         "title": "Former President",
         "major": "ICAM",
         "image": "assets/alumni_photos/Cristin.jpg",
         "linkedin": "https://www.linkedin.com/in/cristin-huffman/"
+    },
+
+    {
+        "name": "Benjamin Miller",
+        "title": "Former Co-Vice President",
+        "major": "Computer Science",
+        "image": "assets/board_photos/Ben.jpg",
+        "linkedin": "https://www.linkedin.com/in/benjamin-miller-ucsd/"
     }
+
 ]

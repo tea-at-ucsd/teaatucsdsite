@@ -3,56 +3,49 @@
         "name": "Naomika Nadkarni",
         "title": "President",
         "major": "Cognitive Science Design",
-        "image": "assets/board_photos/Naomika.jpg",
+        "image": "assets/board_photos/naomika26-27.JPG",
         "linkedin": "https://www.linkedin.com/in/naomika-n-8bb40227b/"
     },
     {
         "name": "Ryan Young",
         "title": "Co-Vice President",
         "major": "Mechanical Engineering",
-        "image": "assets/board_photos/Ryan.jpg",
+        "image": "assets/board_photos/ryan26-27.jpg",
         "linkedin": "https://www.linkedin.com/in/ryan-young-1a9732256/"
     },
     {
-        "name": "Benjamin Miller",
-        "title": "Co-Vice President: Projects",
-        "major": "Computer Science",
-        "image": "assets/board_photos/Ben.jpg",
-        "linkedin": "https://www.linkedin.com/in/benjamin-miller-ucsd/"
-    },
-    {
-        "name": "Kaitlin Bartone",
-        "title": "Marketing and Outreach Director",
-        "major": "Psychology",
-        "image": "assets/board_photos/Kaitlin_B.jpg",
-        "linkedin": "https://www.linkedin.com/in/kaitlin-bartone-91335635b/"
-    },
-    {
-        "name": "Becca Behl",
-        "title": "Competition Coordinator",
-        "major": "Economics",
-        "image": "assets/board_photos/Becca.jpg",
-        "linkedin": "https://www.linkedin.com/in/rebecca-behl-85413b34b/"
-    },
-    {
-        "name": "Sophia Ramirez",
-        "title": "Events Coordinator",
-        "major": "Cognitive Science Design & ICAM",
-        "image": "assets/board_photos/Sophia.jpg",
-        "linkedin": "https://www.linkedin.com/in/sophia-ramirez-/"
+        "name": "Matthew Tarica",
+        "title": "Co-Vice President",
+        "major": "Structural Engineering",
+        "image": "assets/board_photos/matthew26-27.JPG",
+        "linkedin": "https://www.linkedin.com/in/matthew-tarica/"
     },
     {
         "name": "Elisa Correa",
         "title": "Treasurer",
         "major": "Mechanical Engineering",
-        "image": "assets/board_photos/Eli.jpg",
+        "image": "assets/board_photos/eli26-27.JPG",
+        "linkedin": "https://www.linkedin.com/in/elisafcorrea/" 
+    },
+    {
+        "name": "Acacia Featherstone",
+        "title": "Marketing and Outreach Director",
+        "major": "Geosciences",
+        "image": "assets/board_photos/acacia26-27.JPG",
         "linkedin": null 
+    },
+    {
+        "name": "Amanda Cislowski",
+        "title": "Events Coordinator",
+        "major": "Structural Engineering",
+        "image": "assets/board_photos/amanda26-27.JPG",
+        "linkedin": "https://www.linkedin.com/in/amanda-cislowski/" 
     },
     {
         "name": "Avalon Shelton",
         "title": "Technical Director",
         "major": "Electrical Engineering",
-        "image": "assets/board_photos/Avalon.jpg",
-        "linkedin": null 
+        "image": "assets/board_photos/avalon26-27.JPG",
+        "linkedin": "https://www.linkedin.com/in/avalon-shelton-0131a2207/"
     }
 ]
